@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="info">
+            <section class="profile-img">
+                <img src="./assets/imgs/woman.png" alt="imagem de uma mulher" />
+            </section>
+            <section>
+                <h2 id="name">Nome genérico</h2>
+                <p id="personal-text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eveniet
+                    aspernatur odit commodi amet
+                    repellat cum ipsa veritatis omnis nostrum ab delectus error non laboriosam, maxime deleniti ipsum
+                    sequi esse.</p>
+            </section>
+            <section>
+                <ul class="wrapper-li">
+                    <li class="styled-li"><a href="#">Caderno de Estudos</a></li>
+                    <li class="styled-li"><a href="#">Afazeres Domésticos</a></li>
+                    <li class="styled-li"><a href="#">Exercícios</a></li>
+                    <li class="styled-li"><a href="#">Lazer</a></li>
+                </ul>
+            </section>
+        </aside>
+        <main>
+            <h1>Lista de Tarefas</h1>
+                <section>
+                    <input placeholder="Nova tarefa" id="add-task" name="add-task" value="" />
+                    <select id="choice">
+                        <option value="day">
+                            Dia
+                        </option>
+                        <option value="night">
+                            Noite
+                        </option>
+                    </select>
+                    <button class="add-task" onclick="addTask()">
+                        Adicionar
+                    </button>
+                </section>
+                <div class="task-container">
+                    <section class="day-container">
+                        <h2 class="task-title">Dia</h2>
+                        <ul id="day-tasks">
+                        </ul>
+                    </section>
+                    <section class="night-container">
+                        <h2 class="task-title">Noite</h2>
+                        <ul id="night-tasks">
+                        </ul>
+                    </section>
+                </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
