@@ -13,7 +13,7 @@ function addTask(){
     }
     const newTaskItem = document.createElement("li");
     newTaskItem.textContent = userInput;
-    newTaskItem.classList.add("task-list")
+    newTaskItem.classList.add("task-list");
 
     const removeButton = document.createElement("button");
     removeButton.textContent = "❌";
@@ -25,10 +25,8 @@ function addTask(){
     newTaskItem.appendChild(removeButton);
 
     if(selectOption === "day"){
-        newTaskItem.classList.add("day");
         dayTasksUl.appendChild(newTaskItem);
     } else {
-        newTaskItem.classList.add("night");
         nightTasksUl.appendChild(newTaskItem);
     }
 
