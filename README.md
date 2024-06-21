@@ -1,4 +1,4 @@
-# Exercício - Criação de Layou
+# Exercício - Criação de Layout
 
 ### Visão Geral
 Este exercício representa uma fase do processo seletivo da Aceleradora Ágil. Consiste no desenvolvimento de uma aplicação web que gerencia uma lista de tarefas diárias e noturnas.
